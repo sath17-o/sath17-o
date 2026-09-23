@@ -1,0 +1,66 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#05070A"/>
+    <stop offset=".5" stop-color="#0B111A"/>
+    <stop offset="1" stop-color="#05070A"/>
+  </linearGradient>
+  <linearGradient id="accent" x1="80" y1="0" x2="1120" y2="0" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#6EE7FF"/>
+    <stop offset=".5" stop-color="#A78BFA"/>
+    <stop offset="1" stop-color="#6EE7FF"/>
+  </linearGradient>
+  <radialGradient id="glow">
+    <stop offset="0" stop-color="#6EE7FF" stop-opacity=".36"/>
+    <stop offset="1" stop-color="#6EE7FF" stop-opacity="0"/>
+  </radialGradient>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M40 0H0V40" fill="none" stroke="#9FB3C8" stroke-opacity=".055"/>
+  </pattern>
+  <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="18"/>
+  </filter>
+  <filter id="glowdot" x="-200%" y="-200%" width="500%" height="500%">
+    <feGaussianBlur stdDeviation="2.8"/>
+  </filter>
+</defs>
+
+<rect x=".75" y=".75" width="1198.5" height="358.5" rx="26" fill="url(#bg)" stroke="#9FB3C8" stroke-opacity=".18" stroke-width="1.5"/>
+<rect x="1" y="1" width="1198" height="358" rx="26" fill="url(#grid)"/>
+
+<circle cx="175" cy="65" r="210" fill="url(#glow)" filter="url(#blur)" opacity=".48">
+  <animate attributeName="cx" values="175;270;175" dur="10s" repeatCount="indefinite"/>
+</circle>
+<circle cx="1060" cy="310" r="245" fill="url(#glow)" filter="url(#blur)" opacity=".22">
+  <animate attributeName="cy" values="310;230;310" dur="12s" repeatCount="indefinite"/>
+</circle>
+
+<g opacity=".38">
+  <path d="M78 287C240 216 307 323 460 252S724 169 866 234 1047 285 1120 208" stroke="url(#accent)" stroke-width="1.4" fill="none"/>
+  <path d="M72 299C252 235 324 338 476 270S730 190 882 250 1033 304 1128 226" stroke="#A78BFA" stroke-opacity=".2" stroke-width="1" fill="none"/>
+</g>
+
+<g fill="#6EE7FF">
+  <circle cx="78" cy="287" r="2.5"><animate attributeName="opacity" values=".25;1;.25" dur="2.4s" repeatCount="indefinite"/></circle>
+  <circle cx="460" cy="252" r="2.5"><animate attributeName="opacity" values="1;.25;1" dur="3.1s" repeatCount="indefinite"/></circle>
+  <circle cx="866" cy="234" r="2.5"><animate attributeName="opacity" values=".25;1;.25" dur="3.8s" repeatCount="indefinite"/></circle>
+  <circle cx="1120" cy="208" r="2.5"><animate attributeName="opacity" values="1;.25;1" dur="2.8s" repeatCount="indefinite"/></circle>
+</g>
+
+<rect x="70" y="50" width="246" height="31" rx="15.5" fill="#0D141E" stroke="#6EE7FF" stroke-opacity=".30"/>
+<circle cx="91" cy="65.5" r="4.5" fill="#6EE7FF">
+  <animate attributeName="opacity" values=".3;1;.3" dur="1.8s" repeatCount="indefinite"/>
+</circle>
+<text x="106" y="70.5" fill="#9FB3C8" font-size="13" letter-spacing="2.15" font-family="Inter,Segoe UI,Arial,sans-serif">AI SYSTEMS / RESEARCH</text>
+
+<text x="70" y="157" fill="#F7FAFC" font-size="58" font-weight="700" letter-spacing="1.2" font-family="Inter,Segoe UI,Arial,sans-serif">SATHSREEHARI K</text>
+<rect x="70" y="181" width="690" height="3" rx="1.5" fill="url(#accent)">
+  <animate attributeName="width" values="560;720;560" dur="6s" repeatCount="indefinite"/>
+</rect>
+<text x="70" y="229" fill="#B8C7D7" font-size="24" font-family="Inter,Segoe UI,Arial,sans-serif">AI systems that have to survive real-world constraints.</text>
+<text x="70" y="264" fill="#8094A9" font-size="15.5" letter-spacing="1.2" font-family="Inter,Segoe UI,Arial,sans-serif">BUILD IT  ·  VERIFY IT  ·  MAKE THE CLAIM SURVIVE INSPECTION</text>
+
+<rect x="-220" y="332" width="170" height="1.5" fill="#6EE7FF" opacity=".5">
+  <animate attributeName="x" values="-220;1230" dur="5.5s" repeatCount="indefinite"/>
+</rect>
+</svg>
